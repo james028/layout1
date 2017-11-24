@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout 1</title>
+
+    <link href="style.css" rel="stylesheet">
+    <!--<link href="media-queries.css" rel="stylesheet">-->
+</head>
+<body>
+    <header>
+        <div class="centerH headerTop">
+                <div class="ib-10 ibs-100 logo">
+                </div>
+                <div class="ib-40 ibs-100">
+                    <div class="dropThat showOnSmall">&#9776;</div>
+                    <div class="mainmenu">
+                        {% include 'K2PWebBundle:Frontend:_Layout/__menu.html.twig' %}
+                        <div class="showOnSmall">{{ knp_menu_render('sylius.frontend.user', {'template': 'K2PWebBundle:Frontend:_Layout/_menu_user.html.twig', 'currentClass': 'active', 'ancestorClass': 'active'}) }}</div>
+                    </div>
+                </div>
+            <div class="ib-50 ibs-100" style="position:relative;">
+                <div class="userMenu">
+                        <p class="navPhone">Call us now: +421 31 5912626, +421 918 337 227</p>
+                    <div class="headerIcons">
+                        <a class="cart-button" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3026 93.646 35 30.195">
+                            <path d="M26.789,13.125,19.82,2.688A1.579,1.579,0,0,0,18.5,2.02a1.555,1.555,0,0,0-1.32.684l-6.968,10.42H2.591A1.6,1.6,0,0,0,1,14.715a1.34,1.34,0,0,0,.064.43L5.1,29.893a3.164,3.164,0,0,0,3.055,2.323H28.841a3.2,3.2,0,0,0,3.07-2.323l4.041-14.748.048-.43a1.6,1.6,0,0,0-1.591-1.591Zm-13.061,0,4.773-7,4.773,7ZM18.5,25.852a3.182,3.182,0,1,1,3.182-3.182A3.191,3.191,0,0,1,18.5,25.852Z" transform="translate(3025 91.626)"/>
+                            </svg>
+                        </a>
+                        <a class="cart-button" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3026 93.646 35 30.195">
+                            <path d="M26.789,13.125,19.82,2.688A1.579,1.579,0,0,0,18.5,2.02a1.555,1.555,0,0,0-1.32.684l-6.968,10.42H2.591A1.6,1.6,0,0,0,1,14.715a1.34,1.34,0,0,0,.064.43L5.1,29.893a3.164,3.164,0,0,0,3.055,2.323H28.841a3.2,3.2,0,0,0,3.07-2.323l4.041-14.748.048-.43a1.6,1.6,0,0,0-1.591-1.591Zm-13.061,0,4.773-7,4.773,7ZM18.5,25.852a3.182,3.182,0,1,1,3.182-3.182A3.191,3.191,0,0,1,18.5,25.852Z" transform="translate(3025 91.626)"/>
+                            </svg>
+                        </a>
+                        <a class="cart-button" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3026 93.646 35 30.195">
+                            <path d="M26.789,13.125,19.82,2.688A1.579,1.579,0,0,0,18.5,2.02a1.555,1.555,0,0,0-1.32.684l-6.968,10.42H2.591A1.6,1.6,0,0,0,1,14.715a1.34,1.34,0,0,0,.064.43L5.1,29.893a3.164,3.164,0,0,0,3.055,2.323H28.841a3.2,3.2,0,0,0,3.07-2.323l4.041-14.748.048-.43a1.6,1.6,0,0,0-1.591-1.591Zm-13.061,0,4.773-7,4.773,7ZM18.5,25.852a3.182,3.182,0,1,1,3.182-3.182A3.191,3.191,0,0,1,18.5,25.852Z" transform="translate(3025 91.626)"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="count">(0)<p>
+                    <!--<a class="cart-button" href="{{ path('sylius_cart_summary') }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="3026 93.646 35 30.195">
+                          <path d="M26.789,13.125,19.82,2.688A1.579,1.579,0,0,0,18.5,2.02a1.555,1.555,0,0,0-1.32.684l-6.968,10.42H2.591A1.6,1.6,0,0,0,1,14.715a1.34,1.34,0,0,0,.064.43L5.1,29.893a3.164,3.164,0,0,0,3.055,2.323H28.841a3.2,3.2,0,0,0,3.07-2.323l4.041-14.748.048-.43a1.6,1.6,0,0,0-1.591-1.591Zm-13.061,0,4.773-7,4.773,7ZM18.5,25.852a3.182,3.182,0,1,1,3.182-3.182A3.191,3.191,0,0,1,18.5,25.852Z" transform="translate(3025 91.626)"/>
+                        </svg>
+                        {{ knp_menu_render('sylius.frontend.cart', {'template': 'K2PWebBundle:Frontend:_Layout/_menu_cart.html.twig'}) }}
+                    </a>-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="bussCards">
+        <div class="ib-row">
+            <div class="ib-50 ibs-100">
+                <div class="bussLeft"></div>
+            </div>
+            <div class="ib-50 ibs-100">
+                <p>Bussines Cards</p>
+                <p></p>
+                <div class="prodTime">
+                    <p>Production time:</p>
+                    <input type="text" />
+                    <div class="buttons">
+                        <button class="buttCards1">Download templates</button>
+                        <button class="buttCards1">Run online editor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ib-25 ibs-100"></div>
+        </div>
+    </section>
+
+
+    
+
+
+    <!--{% set system_settings = sylius_settings_all('system') %}-->
+    <footer>
+        <div class="b2bOffer">
+            <div class="ib-row">
+                <div class="ib-50 ibs-100">
+                    <p class="b2bTitle">Kanovits B2B Offer</p>
+                    <p class="b2bText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus orci vel odio auctor efficitur. Aliquam erat volutpat. Sed tempor felis odio, sed tincidunt augue efficitur eget. Nullam metus erat, mattis porttitor fermentum quis, lobortis sed mauris. Vestibulum quis metus hendrerit, congue quam id, mollis eros. Suspendisse vel fermentum erat. Etiam consequat vitae ex sit amet scelerisque.</p>
+                    <div class="b2bDown">
+                        <span class="b2bimg"></span>
+                        <a href="#">
+                            <button class="b2bBtn">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ib-50 ibs-100">
+                    <div class="b2bRight"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footerNews">
+            <div class="contentWidth">
+                <div class="ib-row">
+                    <div class="ib-50 ibs-100 Left1">
+                        <p class="leftNews">Sign up to our newsletter</p>
+                    </div>
+                    <div class="ib-50 ibs-100 toRight Right1">
+                        <input type="type" name="text" class="inpNews" placeholder="Your email goes there">
+                        <button class="btn">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentWidth mainFooterRow">
+            <div class="ib-row">
+                <!--<div class="ib-60 ibs-100">
+                    <h4>Subscribe to our newsletterer</h4>
+                    <div class="newsletterText">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+                    <input type="text" placeholder="E-mail Address"/>
+                    <a class="button buttonTeal newsletterButton">Subscribe</a>
+                </div>
+                <div class="ib-40 hideOnSmall">
+                    <div class="ib-row">
+                        <div class="ib-40">
+                            <h4>{{'k2p.footer.information.contact'|trans}}</h4>
+                            <div>
+                                +44 345 678 903<br/>
+                                +44 345 678 903<br/>
+                                +44 345 678 903<br/>
+                                YOUR@MAIL.COM
+                            </div>
+                        </div>
+                        <div class="ib-60">{{ knp_menu_render('sylius.frontend.articles', {'template': 'K2PWebBundle:Frontend:_Layout/_menu.html.twig', 'currentClass': 'active', 'ancestorClass': 'active'}) }}</div>
+                    </div>
+                </div>-->
+                <div class="ib-40 ibs-100">
+                    <div>
+                        {% include 'K2PWebBundle:Frontend:_Layout/__logo.html.twig' %}
+                    </div>
+                    <img src="" alt="">
+                    <div class="footerAdress">
+                        <p>kanovits media, s.r.o,</p>
+                        <p>Alzbetinskie nam. 1.,</p>
+                        <p>92901 Dunajska Streda, Slovakia</p>
+                    </div>
+                    <p class="footerPhone">Call us now: +421 31 5912626</p>
+                    <p>Email: shop@kanovits.com</p>
+                </div>
+                <div class="ib-20 ibs-100">
+                    <h3>categories</h3>
+                    <div class="footer2">
+                        <p>Wedding</p>
+                        <p>Gift products</p>
+                        <p>Photobooks</p>
+                        <p>Calendars</p>
+                        <p>Business cards</p>
+                        <p>Cards</p>
+                    </div>
+                </div>
+                <div class="ib-20 ibs-100">
+                    <h3>information</h3>
+                    <div class="footer2">
+                        <p>Contact Us</p>
+                        <p>Hoow to order</p>
+                        <p>Private inforamtion</p>
+                        <p>Terms and conditions</p>
+                        <p>Delivery method</p>
+                        <p>Payment options</p>
+                        <p>Returns policy<p>
+                    </div>
+                </div>
+                <div class="ib-20 ibs-100">
+                    <h3>categories</h3>
+                    <div class="footer2">
+                        <p>My orders</p>
+                        <p>My project</p>
+                        <p>My addresses</p>
+                        <p>My personal info</p>
+                        <p>My vouchers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottomRow">
+            <div class="contentWidth">
+                <div class="ib-row">
+                    <!--<div class="ib-50 toLeft">© HL REPRO 2017</div>
+                    <div class="ib-50 toRight socialIcons">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3113 2227 7.311 14">
+                                <path d="M84.744,14V7.622h2.178l.311-2.489H84.744V3.578c0-.7.233-1.244,1.244-1.244h1.322V.078C87,.078,86.222,0,85.367,0a3,3,0,0,0-3.189,3.267V5.133H80V7.622h2.178V14Z" transform="translate(3033 2227)"/>
+                            </svg>
+                        </a>
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3069 2228 14 11.355">
+                                <path d="M42.433,13.356A8.094,8.094,0,0,0,50.6,5.189V4.8A6.322,6.322,0,0,0,52,3.322a6.457,6.457,0,0,1-1.633.467,3.026,3.026,0,0,0,1.244-1.556,7.134,7.134,0,0,1-1.789.7A2.778,2.778,0,0,0,47.722,2a2.922,2.922,0,0,0-2.878,2.878,1.516,1.516,0,0,0,.078.622,8.041,8.041,0,0,1-5.911-3.033,2.979,2.979,0,0,0-.389,1.478,3.09,3.09,0,0,0,1.244,2.411,2.622,2.622,0,0,1-1.322-.389h0a2.843,2.843,0,0,0,2.333,2.8,2.4,2.4,0,0,1-.778.078,1.324,1.324,0,0,1-.544-.078,2.947,2.947,0,0,0,2.722,2.022A5.872,5.872,0,0,1,38.7,12.033a2.153,2.153,0,0,1-.7-.078,7.341,7.341,0,0,0,4.433,1.4" transform="translate(3031 2226)"/>
+                            </svg>
+                        </a>
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="3025 2227 14 14">
+                                <path d="M7,1.244a21.463,21.463,0,0,1,2.8.078,3.607,3.607,0,0,1,1.322.233,2.732,2.732,0,0,1,1.322,1.322A3.607,3.607,0,0,1,12.678,4.2c0,.7.078.933.078,2.8a21.463,21.463,0,0,1-.078,2.8,3.607,3.607,0,0,1-.233,1.322,2.732,2.732,0,0,1-1.322,1.322,3.607,3.607,0,0,1-1.322.233c-.7,0-.933.078-2.8.078a21.463,21.463,0,0,1-2.8-.078,3.607,3.607,0,0,1-1.322-.233,2.732,2.732,0,0,1-1.322-1.322A3.607,3.607,0,0,1,1.322,9.8c0-.7-.078-.933-.078-2.8a21.463,21.463,0,0,1,.078-2.8,3.607,3.607,0,0,1,.233-1.322A2.793,2.793,0,0,1,2.1,2.1a1.315,1.315,0,0,1,.778-.544A3.607,3.607,0,0,1,4.2,1.322,21.463,21.463,0,0,1,7,1.244M7,0A22.981,22.981,0,0,0,4.122.078,4.8,4.8,0,0,0,2.411.389a3.045,3.045,0,0,0-1.244.778A3.045,3.045,0,0,0,.389,2.411,3.544,3.544,0,0,0,.078,4.122,22.981,22.981,0,0,0,0,7,22.981,22.981,0,0,0,.078,9.878a4.8,4.8,0,0,0,.311,1.711,3.045,3.045,0,0,0,.778,1.244,3.045,3.045,0,0,0,1.244.778,4.8,4.8,0,0,0,1.711.311A22.981,22.981,0,0,0,7,14a22.981,22.981,0,0,0,2.878-.078,4.8,4.8,0,0,0,1.711-.311,3.263,3.263,0,0,0,2.022-2.022,4.8,4.8,0,0,0,.311-1.711C13.922,9.1,14,8.867,14,7a22.981,22.981,0,0,0-.078-2.878,4.8,4.8,0,0,0-.311-1.711,3.045,3.045,0,0,0-.778-1.244A3.045,3.045,0,0,0,11.589.389,4.8,4.8,0,0,0,9.878.078,22.981,22.981,0,0,0,7,0M7,3.422A3.52,3.52,0,0,0,3.422,7,3.578,3.578,0,1,0,7,3.422M7,9.333A2.292,2.292,0,0,1,4.667,7,2.292,2.292,0,0,1,7,4.667,2.292,2.292,0,0,1,9.333,7,2.292,2.292,0,0,1,7,9.333m3.733-6.922a.856.856,0,1,0,.856.856.863.863,0,0,0-.856-.856" transform="translate(3025 2227)"/>
+                            </svg>
+                        </a>
+                    </div>-->
+                    <div class="ib-40 ibs-100">
+                        <p>2017 Kanovits Media | Design: Key2Print</p>
+                    </div>
+                    <div class="ib-60 ibs-100">
+                    <div class="payments">
+                        <p>Payments / delivery methods: </p>
+                        <ul>
+                            <li class="dpd">
+                                <span></span>
+                            </li>
+                            <li class="poczta">
+                                <span></span>
+                            </li>
+                            <li class="dotpay">
+                                <span></span>
+                            </li>
+                            <li class="master">
+                                <span></span>
+                            </li>
+                            <li class="visa">
+                                <span></spann>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    
+
+
+
+    
+</body>
+</html>
