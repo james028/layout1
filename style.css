@@ -2249,11 +2249,13 @@ footer a:hover{
   min-width: 100%;
 }
 .payments .payLeft {
-  width: 300px
+  width: 300px;
+  white-space: nowrap;
 }
 .payments ul {
   display: flex;
   min-width: 10000000px;
+  margin-top: -3px;
 }
 .payments ul li {
   width: 14%;
@@ -2264,7 +2266,7 @@ footer a:hover{
   height: 30px;
   display: flex;
   justify-content: flex-end;
-  background-image: url('/bundles/k2pweb/img/Kanovitz/payments.png');
+  background-image: url('img/payments.png');
   background-repeat: no-repeat;
   text-decoration: none;
 }
@@ -2422,4 +2424,15 @@ footer a:hover{
   position: absolute;
   right: 15px;
   bottom: 20px;
+}
+
+
+
+
+.backgroundImg {
+  background-image: url('img/section2.png');
+  background-repeat: no-repeat;
+  background-position: 215% 0%;
+  
+
 }
