@@ -63,6 +63,7 @@
 
     <section id="1">
         <div class="ib-row contentWidth bussCards">
+            <p class="cardsMainTitle">Store > B2B > Business Cards</p>
             <div class="ib-40 ibs-100 bussLeft">
                 <img src="img/sectionConfig.png" alt="sectionConfig" />
             </div>
@@ -109,7 +110,9 @@
                     </select>
                     <label for="paperType6">Quantify: </label>
                     <input class="inpPaper" placeholder="100_">
-                    <button class="bussButt">199$ + VAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Add to cart</button>
+                    <button class="bussButt">
+                        <p>199$ + VAT</p> <p>Add to cart</p>
+                    </button>
                 </form>
             </div>
         </div>
@@ -117,8 +120,8 @@
             <div class="ib-70 ibs-100 bussDown">
                     <div class="bussTitleDown tab">
                             <ul>
-                                <li class="tablinks active" onclick="switchTab(event, 'ProductDesc')"><a href="#">Product description</a></li>
-                                <li class="tablinks" onclick="switchTab(event, 'HowToOrder')"><a href="#" >How to order</a></li>
+                                <li class="tablinks active" id="li1" onclick="switchTab(event, 'ProductDesc')"><a href="#">Product description</a></li>
+                                <li class="tablinks" id="li2" onclick="switchTab(event, 'HowToOrder')"><a href="#" >How to order</a></li>
                             </ul>
                     </div>
                     <div class="bussLeftDown">
