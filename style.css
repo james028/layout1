@@ -83,7 +83,6 @@ h2{
 h3{
   font-size: var(--h3FontSize);
   text-transform: var(--h3TextTransform);
-  font-weight: bold;
   margin: 0 0 15px 0;
 }
 h4 {
@@ -608,213 +607,9 @@ header{
 }
 /* CONFIGURATION END*/
 
-/*JOBS*/
-.switch input {
-	cursor: pointer;
-	height: 100%;
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	z-index: 100;
-}
-.switch {
-  height: 30px;
-  margin: 0 20px 0 0;
-  position: relative;
-  width:66px;
-}
-.switch label {
-	background: var(--lightColor);
-  color: var(--bodyTextColor);
-	border-radius: var(--borderRadiusButton);
-	display: block;
-	height: 100%;
-	position: relative;
-	transition: all .15s ease;
-  width: 100%;
-  border: 1px solid var(--lightColor);
-}
-.switch label div {
-  background: var(--invertColor);
-  border-radius: var(--borderRadiusButton);
-  display: block;
-  height: 24px;
-  left: 2px;
-  position: absolute;
-  top: 2px;
-  transition: all .15s ease;
-  width: 24px;
-  border: 1px solid var(--lightColorDark);
-  z-index: 3;
-}
-.switch input:checked~label {
-  background: var(--primaryColor);
-  color: #ffffff;
-  border: 1px solid var(--primaryColorDark);
-}
-.switch input:checked~label div {
-	left: 37px;
-  border: 1px solid var(--primaryColorDark);
-}
-.jobSwitchPrice{
-  position: absolute;
-  top: 8px;
-  z-index: 4;
-  left: inherit;
-  font-size: var(--bodyFontSize);
-  width: 46px;
-  text-align: right;
-  margin: 0 10px;
-}
-.switch input:checked~div{
-  color: #fff;
-}
-.switch input:checked svg{
-  fill: var(--invertColor);
-}
-.jobSwitchPrice .switchon{
-  display: none;
-}
-.jobSwitchPrice svg{
-  height:12px;
-}
-.switch input:checked~div>.switchoff{
-  display: none;
-}
-.switch input:checked~div>.switchon{
-  display: inline-block;
-}
-.switch, .label_services{ display: inline-block;}
-.label_services{width:calc(100% - 88px - 4px)}
-.label_services p{
-  margin: 5px 0 0 0;
-  font-size: 13px;
-  line-height:16px;
-}
-.jobName{
-  font-weight: bold;
-}
-.job-price, .job2-price{
-  font-weight: bold;
-  font-size:20px;
-}
-.jobRow{
-  display: flex;
-  align-items: top;
-  margin-bottom:15px;
-}
-.jobRow:last-child{
-  margin-bottom:0;
-}
-/*JOBS END*/
 
-/* PRICEBUTTONS */
-.priceList{
-  font-size: var(--bodyFontSize);
-  cursor: pointer;
-  position: relative;
-  width: 21.5%;
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  box-sizing: content-box;
-}
-.priceList:nth-child(4n){
-  margin-right:0;
-}
-.netto, .brutto{
-  background-color: var(--lightColor);
-  width:100%;
-  height:100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:10px;
-  border: 1px solid var(--lightColorDark);
-  -webkit-border-radius: var(--borderRadiusButton);
-  -moz-border-radius: var(--borderRadiusButton);
-  border-radius: var(--borderRadiusButton);
-}
-.product-price-active .netto{
-  background-color: var(--primaryColor);
-  border-color: var(--primaryColorDark);
-  color:#fff;
-}
-.netto:hover~.brutto, .brutto:hover{
-  display: flex;
-  opacity: 1;
-  position: absolute;
-  line-height: 18px;
-  top: -10px;
-  left: -8%;
-  background-color: var(--primaryColor);
-  border-color: var(--primaryColorDark);
-  color: #fff;
-  z-index: 1;
-  width: 116%;
-  box-shadow: 1px 5px 5px rgba(0,0,0,0.3);
-}
-.brutto{
-  display: none;
-  opacity: 0;
-}
-.brutto>div{display:inline-block;}
-.showPrices{text-align:right;}
-.showPrices span{font-size:12px;}
-.priceBeforeDiscount{text-decoration: line-through;}
-/* PRICEBUTTONS END*/
 
-/* HELPFILES */
-.helpFile{display: inline-block; position: relative;margin: 0px 5px;}
-.helpFileIcon {
-  height:76px;
-  width: 76px;
-  display:block;
-  background-image: url('/bundles/k2pweb/img/k2p_2017/help_files.png');
-  background-repeat: no-repeat;
-  margin: auto;
-  cursor: pointer;
-}
-.rasterIcon{background-position: -612px -10px;}
-.aiIcon{background-position: -10px -10px;}
-.cdrIcon{background-position: -354px -10px;}
-.epsIcon{background-position: -440px -10px;}
-.inddIcon{background-position: -268px -10px;}
-.pdfIcon{background-position: -96px -10px;}
-.psdIcon{background-position: -182px 10px;}
-.zipIcon{background-position: -526px -10px;}
-.otherIcon{background-position: -698px -10px;}
-.helpFileName{
-  display:none;
-  position: absolute;
-  top: -29px;
-  font-size: var(--bodyFontSize);
-  color: #fff;
-  background-color: #000000;
-  -webkit-border-radius: var(--borderRadiusButton);
-  -moz-border-radius: var(--borderRadiusButton);
-  border-radius: var(--borderRadiusButton);
-  padding: 5px;
-  white-space: nowrap;
-}
-.helpFileName:after {
-	top: 100%;
-	left: 15px;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(0, 0, 0, 0);
-	border-top-color: #000000;
-	border-width: 5px;
-	margin-left: -5px;
-}
-.helpFileIcon:hover~.helpFileName{
-  display: block;
-}
-/* HELPFILES END */
+
 
 /* VARIANT SUMMARY */
 .summaryProperties{margin-bottom: 60px;}
@@ -2380,7 +2175,7 @@ footer a:hover{
   padding-top: 25px;
 }
 .bussMiddle {
-  padding: 15px 25px 0;
+  padding: 15px 20px 0 !important;
   border-radius: 20px;
 }
 .buttons {
@@ -2404,11 +2199,12 @@ footer a:hover{
   border-radius: 20px;
 }
 .bussCards {
-  height: 100% !important;
+  height: auto !important;
 }
 .cartMiddle {
   border-radius: 30px;
   margin-bottom: 10px;
+  width: 100% !important;
 }
 .oneRight, .twoRight, .threeRight {
   min-width: 100%;
@@ -2456,7 +2252,7 @@ footer a:hover{
   margin-bottom: 50px !important;
 }
 .mainBanner2 {
-  height: 550px !important;
+  min-height: 550px !important;
   width:100%;
 }
 .backgroundImg {
@@ -2466,7 +2262,58 @@ footer a:hover{
   margin-bottom: 20px;
 }
 .bussleft img{
-  height: 450px;
+  height: 90% !important;
+
+}
+.payments {
+  text-align: left;
+}
+.payments ul {
+  margin-left: -50px;
+  margin-bottom: 30px;
+}
+.productShortDesc {
+  font-size: 12px !important;
+}
+.productName {
+  margin: 20px auto 10px !important;
+}
+.navPhone {
+  width: 180px;
+  text-align: left;
+}
+.count {
+  padding-right: 10px;
+}
+.bussLeftDown {
+  padding: 0 20px !important;
+}
+.bussRight {
+  margin-left: 0 !important;
+}
+.b2bText {
+  margin: 0 auto 70px;
+}
+.b2bTitle {
+  text-align: center;
+}
+.footerList ul {
+  font-size: 14px !important;
+}
+.footerReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.summaryLeft {
+  text-align: left;
+}
+.summaryRight {
+  text-align: right;
+}
+.bussButt {
+  width: 80% !important;
+  margin: 30px auto 0;
+
 }
 
 }
@@ -2510,6 +2357,9 @@ footer a:hover{
   font-size: 14px;
   border: none;
   border-radius: 30px;
+}
+button {
+  cursor: pointer;
 }
 
 /*Products */
@@ -2947,6 +2797,7 @@ footer a:hover{
   height: 30px;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
+  padding-left: 15px;
 }
 .PriceRightCost {
   font-size: var(--bodyFontSize);
@@ -2996,4 +2847,12 @@ footer a:hover{
 }
 .mainmenu {
   margin-left: -120px;
+}
+.mainBannerMarg {
+  padding-left: 20px;
+}
+@media (max-width: 1800px) {
+  .backgroundImg {
+    background-position: 130% 0%;
+  }
 }
