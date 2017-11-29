@@ -12,7 +12,7 @@
     <header>
         <div class="ib-row">
                 <div class="ib-20 ibs-100">
-                        <div class="logoHeader"></div>
+                    <div class="logoHeader"></div>
                 </div>
                 <div class="ib-40 ibs-100">
                     <div class="dropThat showOnSmall">&#9776;</div>
@@ -21,7 +21,7 @@
                         <div class="showOnSmall">{{ knp_menu_render('sylius.frontend.user', {'template': 'K2PWebBundle:Frontend:_Layout/_menu_user.html.twig', 'currentClass': 'active', 'ancestorClass': 'active'}) }}</div>
                     </div>
                 </div>
-            <div class="ib-40 ibs-100" style="position:relative;">
+            <div class="ib-40 ibs-100">
                 <div class="userMenu">
                         <p class="navPhone">Call us now: +421 31 5912626, +421 918 337 227</p>
                     <div class="headerIcons">
@@ -58,18 +58,8 @@
 
 
 
-
-
-
-
-
-
-    <!--{% set baner_settings = sylius_settings_all('baner') %}
-    {% if app.environment != "test" and baner_settings.baner_active %}-->
-          <div class="mainBanner slickBanner">
-              <!--{% for image in baner_images %}
-                    {% if image.url is null%}-->
-                        <div class="mainBannerImage"><!--style="background-image:url({{ image.path|imagine_filter('sylius_baner') }}); width: 100%; height: {{ baner_settings.baner_height }}px;"-->
+          <!--<div class="mainBanner slickBanner">
+                        <div class="mainBannerImage">
                             <div class="ib-row">
                                 <div class="ib-40 ibs-100 bannerRow1">
                                     <p class="bannerMainTitle">"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
@@ -83,26 +73,21 @@
                                 <div class="ib-60 ibs-100"></div>
                             </div>
                         </div>
-                    <!--{% else %}-->
-                        <a href="{{ image.url }}" {{ image.inNewWindow ? 'target="_blank"' : '' }} >
-                            <div class="mainBannerImage" style="background-image:url({{ image.path|imagine_filter('sylius_baner') }}); width: 100%; height: {{ baner_settings.baner_height }}px;">
-                                <div class="ib-row">
-                                    <div class="ib-40 ibs-100 bannerRow1">
-                                        <p class="bannerMainTitle">"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</p>
-                                        <p class="bannerText1">Suspendisse elementum, sapien non ultricies dignissim, neque erat efficitur libero, at dignissim turpis velit nec neque. Sed luctus libero ut dolor maximus.<p>
-                                        <a href="#">
-                                            <div class="bannerBtnFlex">
-                                                <input type="button" class="bannerBtn" value="CTA"/>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="ib-60 ibs-100"></div>
-                                </div>  
-                            </div>
-                        </a>
-                    <!--{% endif %}
-              {% endfor %}-->
-          </div>
+          </div>-->
+            <div class="mainBanner2">
+                <div class="ib-row">
+                    <div class="ib-40 ibs-100 mainBannerMarg">
+                        <p class="mainBannerTitle">"Lorem ipsum dolor sit amet, consectetur adipiscing eli"</p>
+                        <p class="mainBannerTitleDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper aliquam est, sed ullamcorper lectus convallis sed. Donec vehicula justo vel risus finibus, vel pulvinar est fringilla. Ut scelerisque volutpat dui sed ornare.</p>
+                        <div class="mainButton">
+                            <a href="#">
+                                <button class="buttonBanner">CTA</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ib-60"></div>
+                </div>
+            </div>
             <div class="bannerDown">
                 <div class="contentWidth">
                     <div class="ib-row">
@@ -245,7 +230,7 @@
         <div class="b2bOffer">
             <div class="backgroundImg">
                 <div class="ib-row contentWidth">
-                        <div class="ib-50">
+                        <div class="ib-50 ibs-100">
                                 <p class="b2bTitle">Kanovits B2B Offer</p>
                                 <p class="b2bText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus orci vel odio auctor efficitur. Aliquam erat volutpat. Sed tempor felis odio, sed tincidunt augue efficitur eget. Nullam metus erat, mattis porttitor fermentum quis, lobortis sed mauris. Vestibulum quis metus hendrerit, congue quam id, mollis eros. Suspendisse vel fermentum erat. Etiam consequat vitae ex sit amet scelerisque.</p>
                             <div class="b2bDown">
@@ -255,7 +240,7 @@
                                 </a>
                             </div>
                         </div>
-                    <div class="ib-50"></div>
+                    <div class="ib-50 ibs-100"></div>
                 </div>
             </div>
         </div>
@@ -305,50 +290,50 @@
                         <p>92901 Dunajska Streda, Slovakia</p>
                     </div>
                     <p class="footerPhone">Call us now: +421 31 5912626</p>
-                    <p>Email: shop@kanovits.com</p>
+                    <p class="footerPhone">Email: shop@kanovits.com</p>
                 </div>
-                <div class="ib-20 ibs-100 footerRow">
+                <div class="ib-20 ibs-100 footerList">
                     <h3>categories</h3>
-                    <div class="footer2">
-                        <p>Wedding</p>
-                        <p>Gift products</p>
-                        <p>Photobooks</p>
-                        <p>Calendars</p>
-                        <p>Business cards</p>
-                        <p>Cards</p>
-                    </div>
+                    <ul>
+                        <li><a href="#">Wedding</a></li>
+                        <li><a href="#">Gift products</a></li>
+                        <li><a href="#">Photobooks</a></li>
+                        <li><a href="#">Calendars</a></li>
+                        <li><a href="#">Business Cards</a></li>
+                        <li><a href="#">Cards</a></li>
+                    </ul>
                 </div>
-                <div class="ib-20 ibs-100 footerRow">
+                <div class="ib-20 ibs-100 footerList">
                     <h3>information</h3>
-                    <div class="footer2">
-                        <p>Contact Us</p>
-                        <p>Hoow to order</p>
-                        <p>Private inforamtion</p>
-                        <p>Terms and conditions</p>
-                        <p>Delivery method</p>
-                        <p>Payment options</p>
-                        <p>Returns policy<p>
-                    </div>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">How to order</a></li>
+                        <li><a href="#">Private information</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Delivery method</a></li>
+                        <li><a href="#">Payment options</a></li>
+                        <li><a href="#">Returns policy</a></li>
+                    </ul>
                 </div>
-                <div class="ib-20 ibs-100 footerRow">
+                <div class="ib-20 ibs-100 footerList">
                     <h3>categories</h3>
-                    <div class="footer2">
-                        <p>My orders</p>
-                        <p>My project</p>
-                        <p>My addresses</p>
-                        <p>My personal info</p>
-                        <p>My vouchers</p>
-                    </div>
+                    <ul>
+                        <li><a href="#">My orders</a></li>
+                        <li><a href="#">My projects</a></li>
+                        <li><a href="#">My addresses</a></li>
+                        <li><a href="#">My personal info</a></li>
+                        <li><a href="#">My vouchers</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="footerBottomRow">
             <div class="contentWidth">
                 <div class="ib-row">
-                    <div class="ib-40 ibs-100">
+                    <div class="ib-50 ibs-100">
                         <p>2017 Kanovits Media | Design: Key2Print</p>
                     </div>
-                    <div class="ib-60 ibs-100">
+                    <div class="ib-50 ibs-100">
                     <div class="payments">
                         <p class="payLeft" >Payments / delivery methods: </p>
                         <ul>
